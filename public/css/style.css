@@ -1,6 +1,55 @@
-h1 {
-  color: purple;
-  t
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+nav h1 {
+  color: #494b4b;
+  font-size: 3rem;
+}
+nav h1 span {
+  color: #033009;
+}
+nav .menu {
+  margin-top: 5px;
+  margin-left: 200px;
+}
+nav .menu a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #000;
+  padding-bottom: 5px;
+}
+nav .menu a:hover {
+  color: #c50707;
+  text-decoration: underline;
+}
+nav .menu a .fa-home {
+  margin-right: 5px;
+  color: #680202;
+}
+nav .menu a .fa-address-card {
+  margin-right: 5px;
+  color: #ab63f0;
+}
+nav .menu a .fa-calendar-check {
+  margin-right: 5px;
+  color: #0d0496;
+}
+nav .menu a .fa-headset {
+  margin-right: 5px;
+  color: #044d22;
 }
 
 /*# sourceMappingURL=style.css.map */
