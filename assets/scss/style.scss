@@ -1,63 +1,294 @@
-*{
-  padding: 0;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+} /* fin reset Meyer */
+
+/* root */
+
+/* google font */
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap");
+
+* {
+  box-sizing: border-box;
 }
 
-html{
-  scroll-behavior: smooth;
+body {
+  font-family: "Poppins", sans-serif;
 }
 
-nav{
+/* style pr le header */
+.clear {
+  clear: both;
+}
+.header {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  text-transform: uppercase;
-  h1{
-    color: rgb(73, 75, 75);
-    font-size: 3rem;
-    span{
-      color: rgb(3, 48, 9);
+  background-color: rgb(104, 104, 245);
+
+  img {
+    margin: 15px 100px 30px 50px;
+  }
+
+  h1 {
+    text-align: center;
+    margin: auto 10px;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 1px rgb(236, 229, 250);
+    font-family: "Oswald", sans-serif;
+  }
+
+  a {
+    margin: 20px 15px;
+    font-size: 2rem;
+    transition: 1s;
+
+    &:hover {
+      color: blanchedalmond;
     }
   }
-  .menu{
-    margin-top: 5px;
-    margin-left: 200px;
+}
+
+nav {
+  .menu .active {
+    background-color: rgb(252, 109, 169);
+    color: rgb(253, 255, 142);
   }
-  .menu a{
-    margin-right: 20px;
+
+  .menu {
+    text-align: center;
+    padding: 20px;
+    height: 80px;
+    background-color: rgb(170, 155, 250);
+    border-bottom: 7px solid rgb(247, 223, 223);
+  }
+
+  .menu a {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid ivory;
+    border-radius: 10px 0px;
+    transition: 1s;
+    font-size: 1.3rem;
+    font-family: "Playfair Display", serif;
     text-decoration: none;
     color: #000;
-    padding-bottom: 5px;
+    background-color: rgb(84, 84, 252);
+
+    &:hover {
+      background-color: #000;
+      color: #fff;
+    } /* fin header */
+  }
+} 
+
+/* début main */
+main{
+  width: 80%;
+  margin: auto;
+}
+aside {
+  .aside {
+    float: left;
+    width: 20%;
   
-    &:hover{
-      color: rgb(197, 7, 7);
-      text-decoration: underline;
-    }
+    text-align: center;
+    padding: 20px;
+    margin: 10px 0;
+    background-color: rgb(170, 155, 250);
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    line-height: 1.5;
   }
-  .menu a .fa-home{
-    margin-right: 5px;
-    color: rgb(104, 2, 2);
+
+  .aside h2 {
+    margin: 30px;
+    font-size: 2rem;
+    font-family: "Playfair Display", serif;
   }
-  .menu a .fa-address-card{
-    margin-right: 5px;
-    color: rgb(171, 99, 240);
+
+  .niveau {
+    float: left;
+    width: 80%;
+    padding: 20px;
+    /* font-size: 1.5rem; */
   }
-  .menu a .fa-calendar-check{
-    margin-right: 5px;
-    color: rgb(13, 4, 150);
-  }
-  .menu a .fa-headset{
-    margin-right: 5px;
-    color: rgb(4, 77, 34);
-  }
+
+.niveau h2,
+.niveau h3,
+.niveau h4 {
+  margin: 10px;
+  font-family: "Playfair Display", serif;
 }
 
+.niveau p {
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  line-height: 1.5;
+} /* fin main */
+}
 
+/* style pr le footer */
+footer {
+  background-color: rgb(65, 58, 58);
+  width: 100%;
+  height: 45vh;
 
+  .services {
+    display: flex;
+  }
 
+  .services h3 {
+    text-align: center;
+    margin: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.8rem;
+    font-family: "Playfair Display", serif;
+  }
 
+  .services p {
+    font-size: 1.2rem;
+    color: ivory;
+    margin: 15px;
+    letter-spacing: 2px;
+    line-height: 1;
+  }
 
+  .contact p {
+    color: #000;
+    text-align: center;
+    margin: 30px;
+    font-size: 10px;
+    letter-spacing: 1px;
+  } /* fin footer */
+}
 
 
 
