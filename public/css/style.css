@@ -1,0 +1,293 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* fin reset Meyer */
+/* root */
+:root {
+  --color1: hotpink;
+  --color2: rgb(104, 104, 245);
+  --color3: rgb(236, 229, 250);
+  --color4: blanchedalmond;
+  --color5: rgb(252, 109, 169);
+  --color6: rgb(253, 255, 142);
+  --color7: rgb(170, 155, 250);
+  --color8: rgb(253, 255, 142);
+  --color9: rgb(247, 223, 223);
+  --color10: ivory;
+  --color11: #000;
+  --color12: #fff;
+  --color13: rgb(252, 109, 169,);
+  --color14: rgb(65, 58, 58);
+  --color15: rgb(84, 84, 252);
+  --color16: rgba(84, 84, 252, 0.11);
+}
+
+/* google font */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* style pr le header */
+.clear {
+  clear: both;
+}
+
+.header {
+  display: flex;
+  background-color: var(--color2);
+}
+.header img {
+  margin: 15px 100px 30px 50px;
+}
+.header h1 {
+  text-align: center;
+  margin: auto 10px;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 1px var(--color3);
+  font-family: "Oswald", sans-serif;
+}
+.header a {
+  margin: 20px 15px;
+  font-size: 2rem;
+  transition: 1s;
+}
+.header a:hover {
+  color: var(blanchedalmond);
+}
+
+nav .menu .active {
+  background-color: var(--color5);
+  color: var(--color6);
+}
+nav .menu {
+  text-align: center;
+  padding: 20px;
+  height: 80px;
+  background-color: var(--color7);
+  border-bottom: 7px solid var(--color2);
+}
+nav .menu a {
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid var(--color10);
+  border-radius: 10px 0px;
+  transition: 1s;
+  font-size: 1.3rem;
+  font-family: "Playfair Display", serif;
+  text-decoration: none;
+  color: var(--color11);
+  background-color: var(--color15);
+  /* fin header */
+}
+nav .menu a:hover {
+  background-color: var(--color11);
+  color: var(--color12);
+}
+
+/* début main */
+main {
+  width: 80%;
+  margin: auto;
+}
+
+aside .aside {
+  float: left;
+  width: 20%;
+  text-align: center;
+  padding: 20px;
+  margin: 10px 0;
+  background-color: var(--color7);
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+aside .aside h2 {
+  margin: 30px;
+  font-size: 2rem;
+  font-family: "Playfair Display", serif;
+}
+aside .niveau {
+  float: left;
+  width: 80%;
+  padding: 20px;
+}
+aside .niveau h2,
+aside .niveau h3,
+aside .niveau h4 {
+  margin: 10px;
+  font-family: "Playfair Display", serif;
+}
+aside .niveau p {
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+
+.tableau {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 15px auto;
+  background-image: url(/public/img/table.jpg);
+}
+.tableau caption {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  color: var(--color1);
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.tableau th, .tableau td {
+  border: 1px solid var(--color12);
+  border-collapse: collapse;
+  background-color: var(--color13);
+  font-size: 1.1rem;
+  padding: 10px;
+}
+.tableau th {
+  background: var(--color7);
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.tableau td::first-letter {
+  text-transform: uppercase;
+}
+.tableau tbody tr:nth-of-type(2), .tableau tbody tr:nth-of-type(5) {
+  background-color: var(--color16);
+}
+
+/* fin main */
+/* style pr le footer */
+footer {
+  background-color: var(--color14);
+  width: 100%;
+  height: 45vh;
+  /* fin footer */
+}
+footer .services {
+  display: flex;
+}
+footer .services h3 {
+  text-align: center;
+  margin: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.8rem;
+  font-family: "Playfair Display", serif;
+}
+footer .services p {
+  font-size: 1.2rem;
+  color: ivory;
+  margin: 15px;
+  letter-spacing: 2px;
+  line-height: 1;
+}
+footer .contact p {
+  color: var(--color11);
+  text-align: center;
+  margin: 30px;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+/*# sourceMappingURL=style.css.map */
