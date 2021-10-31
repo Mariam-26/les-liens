@@ -6,6 +6,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Aclonica&family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Oswald:wght@700&display=swap");
 html,
 body,
 div,
@@ -265,6 +266,40 @@ aside .niveau p {
 }
 .tableau tbody tr:nth-of-type(2), .tableau tbody tr:nth-of-type(5) {
   background-color: var(--color16);
+}
+
+blockquote {
+  font-size: 1.1rem;
+  font-style: italic;
+  margin: 20px;
+  padding: 0 200px;
+}
+blockquote strong {
+  font-family: "Lobster", cursive;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 15px;
+  color: var(--color14);
+}
+blockquote i {
+  font-size: 2rem;
+  padding: 5px;
+  color: var(--color15);
+}
+
+cite {
+  font-size: 1.3rem;
+  margin: 60px 0;
+}
+cite::before {
+  content: "«";
+}
+cite::after {
+  content: "»";
+}
+
+strong {
+  font-size: 1.4rem;
 }
 
 /* fin main */
