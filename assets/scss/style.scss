@@ -114,6 +114,9 @@ video {
   --color16: rgba(84, 84, 252, 0.11);
   --color17: rgb(23, 7, 252);
   --color18: violet;
+  --color19: rgba(12, 12, 0, 0.250);
+  --color20: rgba(255, 4, 4, 0.801);
+  --color21: rgb(4, 255, 17);
 }
 
 /* google font */
@@ -326,11 +329,136 @@ blockquote {
      }
   }
 
-
-
 strong {
   font-size: 1.4rem;
 }
+
+// style pr les images
+.img {
+  background-image: url(/public/img/table.jpg);
+  background-position: top;
+  height: 85vh;
+  margin-bottom: 30px;
+
+   p {
+ background-color: var(--color19);
+width: 75%;
+margin: 200px;
+ border-radius: 10px;
+ font-size: 1.3rem;
+ padding: 20px;
+ margin: 0 auto;
+ line-height: 1.5;
+ letter-spacing: 1px;
+ font-family: "Playfair Display", serif;
+  }
+}
+
+.html {
+  h1 {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+}
+
+.figure {
+ text-align: center;
+ margin-bottom: 30px;
+
+ img {
+  border: 30px solid var(--color6);
+}
+}
+
+.img2 {
+  text-align: center;
+  h2 {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+
+figure img:first-child {
+  margin: 15px;
+  border: 10px solid var(--color1);
+  box-shadow: 0 10px  10px;
+  border-right: 13px solid var(--color11);
+  border-left: 13px solid var(--color11);
+  transition: 2s;
+
+  &:hover {
+    rotate: 45deg;
+  }
+}
+
+figure img:nth-of-type(2) {
+  margin: 15px;
+  border: 10px solid var(--color1);
+  box-shadow: 0 10px  10px;
+  border-right: 13px solid var(--color11);
+  border-bottom: 13px solid var(--color11);
+  transition: 2s ease-in-out;
+
+  &:hover {
+    rotate: 360deg;
+  }
+}
+
+figure img:nth-of-type(3) {
+  margin: 15px;
+  border: 10px solid var(--color1);
+  box-shadow: 10px 10px  10px var(--color11);
+  transition: ease-out 2s;
+
+  &:hover {
+   rotate: 90deg;
+  }
+}
+}
+
+.selecteur {
+  h2:first-child {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+
+    &:hover {
+      color: var(--color1);
+    }
+  }
+
+  span {
+    color: var(--color17);
+    margin-bottom: 10px;
+  }  
+}
+
+h2:nth-of-type(2) {
+  color: var(--color1);
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+p:nth-of-type(2) {
+  padding: 20px;
+  background-color: var(--color20);
+}
+
+p:nth-of-type(3) {
+  padding: 20px;
+  background-color: var(--color21);
+}
+
+.selecteur a {
+  margin: 20px;
+  text-decoration: none;
+  color: var(--color1);
+  font-size: 1.1rem;
+}
+
+
 
 
  
