@@ -111,13 +111,13 @@ video {
   --color10: ivory;
   --color11: #000;
   --color12: #fff;
-  --color13: rgb(252, 109, 169,);
+  --color13: rgb(252, 109, 169);
   --color14: rgb(65, 58, 58);
   --color15: rgb(84, 84, 252);
   --color16: rgba(84, 84, 252, 0.11);
   --color17: rgb(23, 7, 252);
   --color18: violet;
-  --color19: rgba(12, 12, 0, 0.250);
+  --color19: rgba(12, 12, 0, 0.25);
   --color20: rgba(255, 4, 4, 0.801);
   --color21: rgb(4, 255, 17);
 }
@@ -191,19 +191,22 @@ nav .menu a {
   text-decoration: none;
   color: var(--color11);
   background-color: var(--color15);
-  /* fin header */
 }
 nav .menu a:hover {
   background-color: var(--color11);
   color: var(--color12);
 }
 
-/* début main */
+/* fin header */
+/* début du style pour le main */
 main {
   width: 80%;
   margin: auto;
 }
 
+aside {
+  /* style pour le aside */
+}
 aside .aside {
   float: left;
   width: 20%;
@@ -237,7 +240,9 @@ aside .niveau p {
   line-height: 1.5;
 }
 
+/* fin du style de aside */
 .tableau {
+  /* style pour le tableau */
   width: 100%;
   border-collapse: collapse;
   margin: 15px auto;
@@ -251,7 +256,8 @@ aside .niveau p {
   font-weight: bold;
   letter-spacing: 1px;
 }
-.tableau th, .tableau td {
+.tableau th,
+.tableau td {
   border: 1px solid var(--color12);
   border-collapse: collapse;
   background-color: var(--color13);
@@ -267,11 +273,14 @@ aside .niveau p {
 .tableau td::first-letter {
   text-transform: uppercase;
 }
-.tableau tbody tr:nth-of-type(2), .tableau tbody tr:nth-of-type(5) {
+.tableau tbody tr:nth-of-type(2),
+.tableau tbody tr:nth-of-type(5) {
   background-color: var(--color16);
 }
 
+/* fin du style pour le tableau */
 blockquote {
+  /* style pour le texte */
   font-size: 1.1rem;
   font-style: italic;
   margin: 20px;
@@ -305,6 +314,7 @@ strong {
   font-size: 1.4rem;
 }
 
+/* fin du style pour le tableau */
 .img {
   background-image: url(/public/img/table.jpg);
   background-position: top;
@@ -378,6 +388,10 @@ strong {
   rotate: 90deg;
 }
 
+/* fin du style pour les images */
+.selecteur {
+  /* style pour le sélecteur */
+}
 .selecteur h2:first-child {
   font-size: 1.2rem;
   letter-spacing: 1px;
@@ -415,6 +429,7 @@ p:nth-of-type(3) {
   font-size: 1.1rem;
 }
 
+/* fin du style pour le sélecteur */
 /* fin main */
 /* style pr le footer */
 footer {
