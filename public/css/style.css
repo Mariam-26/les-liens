@@ -120,6 +120,7 @@ video {
   --color19: rgba(12, 12, 0, 0.25);
   --color20: rgba(255, 4, 4, 0.801);
   --color21: rgb(4, 255, 17);
+  --color22: yellow;
 }
 
 /* google font */
@@ -450,6 +451,49 @@ p:nth-of-type(3) {
 }
 .biscuit ol ul li {
   list-style-type: none;
+}
+
+.form {
+  margin-bottom: 10px;
+}
+.form h1 {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  margin: 20px;
+  text-transform: uppercase;
+}
+.form form {
+  background-color: var(--color22);
+  font-weight: bold;
+  margin: auto;
+  padding: 30px;
+  width: 50%;
+}
+.form label,
+.form p {
+  font-size: 1.2rem;
+}
+.form input[type=text],
+.form input[type=password],
+.form input[type=email],
+.form input[type=submit],
+.form input[type=reset] {
+  font-size: 1rem;
+}
+.form textarea {
+  resize: none;
+}
+.form input[type=submit],
+.form input[type=reset] {
+  padding: 5px;
+  margin: 10px;
+  border-radius: 10px;
+}
+.form input[type=reset] {
+  background-color: var(--color20);
+}
+.form input[type=submit] {
+  background-color: var(--color21);
 }
 
 /* fin main */

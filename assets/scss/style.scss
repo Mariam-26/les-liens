@@ -97,6 +97,7 @@ video {
 /* root */
 :root {
   --color1: hotpink;
+
   --color2: rgb(104, 104, 245);
   --color3: rgb(236, 229, 250);
   --color4: blanchedalmond;
@@ -117,6 +118,7 @@ video {
   --color19: rgba(12, 12, 0, 0.25);
   --color20: rgba(255, 4, 4, 0.801);
   --color21: rgb(4, 255, 17);
+  --color22: yellow;
 }
 
 /* google font */
@@ -486,6 +488,57 @@ p:nth-of-type(3) {
 
   ol ul li {
     list-style-type: none;
+  }
+}
+
+// style pour le formulaire
+.form {
+  margin-bottom: 10px;
+  h1 {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    margin: 20px;
+    text-transform: uppercase;
+  }
+
+  form {
+    background-color: var(--color22);
+    font-weight: bold;
+    margin: auto;
+    padding: 30px;
+    width: 50%;
+  }
+
+  label,
+  p {
+    font-size: 1.2rem;
+  }
+
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  input[type="submit"],
+  input[type="reset"] {
+    font-size: 1rem;
+  }
+
+  textarea {
+    resize: none;
+  }
+
+  input[type="submit"],
+  input[type="reset"] {
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+  }
+
+  input[type="reset"] {
+    background-color: var(--color20);
+  }
+
+  input[type="submit"] {
+    background-color: var(--color21);
   }
 }
 
