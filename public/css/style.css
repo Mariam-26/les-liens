@@ -430,6 +430,28 @@ p:nth-of-type(3) {
 }
 
 /* fin du style pour le sélecteur */
+.biscuit {
+  margin-bottom: 30px;
+}
+.biscuit h1,
+.biscuit h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: var(--color1);
+  margin: 20px;
+}
+.biscuit ul li {
+  list-style-type: none;
+  margin: 15px;
+}
+.biscuit ol li {
+  list-style: upper-roman;
+}
+.biscuit ol ul li {
+  list-style-type: none;
+}
+
 /* fin main */
 /* style pr le footer */
 footer {

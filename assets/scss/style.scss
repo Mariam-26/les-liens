@@ -463,6 +463,32 @@ p:nth-of-type(3) {
   font-size: 1.1rem;
 } /* fin du style pour le sélecteur */
 
+// style pour les listes
+.biscuit {
+  margin-bottom: 30px;
+  h1,
+  h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: var(--color1);
+    margin: 20px;
+  }
+
+  ul li {
+    list-style-type: none;
+    margin: 15px;
+  }
+
+  ol li {
+    list-style: upper-roman;
+  }
+
+  ol ul li {
+    list-style-type: none;
+  }
+}
+
 /* fin main */
 
 /* style pr le footer */
