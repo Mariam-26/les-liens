@@ -43,7 +43,9 @@
             <a href="#tableau" title="tableau">Tableau</a>
             <a href="#liste" title="liste">Liste</a>
             <a href="#liens" title="liens">Liens</a>
-            <a href="#formulaire" class="active" title="formulaire">Formulaire</a>
+            <a href="#formulaire" class="active" title="formulaire"
+              >Formulaire</a
+            >
             <a href="#mutimedia" title="mutimedia">Mutimédia</a>
             <a href="#animation" title="#animation">Animation</a>
           </div>
@@ -53,6 +55,120 @@
     <!-- fin header -->
     <main>
       <!-- début main -->
+      <section class="form">
+        <h1>formulaire</h1>
+        <form action="POST">
+          <label for="firstname"
+            >pseudo*<input
+              type="text"
+              id="pseudo"
+              name="pseudo"
+              placeholder="Votre pseudo"
+              required
+          /></label>
+          <br />
+          <label for="name"
+            >Nom*<input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Votre nom"
+              required
+          /></label>
+          <br />
+          <label for="email"
+            >Courriel*<input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Votre courriel"
+              required
+          /></label>
+          <br />
+          <label for="password"
+            >Mot de passe*<input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Votre mot de passe"
+              required
+          /></label>
+          <br />
+          <label for="cv"
+            >CV en pdf<input
+              type="file"
+              id="docpiker"
+              accept=".pdf"
+              placeholder="Choisir un dossier"
+              required
+          /></label>
+          <br />
+          <p>Quels sont vos animaux préférés ?</p>
+          <label for="chat">Chat<input type="checkbox" name="chat" id="chat"></label>
+          <label for="chien">Chien<input type="checkbox" name="chien" id="chien"></label>
+          <label for="mouton">Mouton<input type="checkbox" name="mouton" id="mouton"></label>
+          <label for="chevre">Chèvre<input type="checkbox" name="chevre" id="chevre"></label> <br>
+          <div class="gender">Vous êtes une femme ou un homme ?</div>
+          <label for="gender">Femme<input type="radio" name="gender" checked></label>
+          <label for="gender">Homme<input type="radio" name="gender"></label>
+          <div class="number">Entez votre âge</div>
+          <input type="number" step="1" max="120" min="18" value="18"> <br>
+          
+          <label>Choisissez votre pays :
+            <select name="pays">
+              <optgroup label="europe">
+                <option value="france">France</option>
+                <option value="italie">Italie</option>
+                <option value="espagne" disabled>Espagne</option>
+              </optgroup>
+              <optgroup label="asie">
+                <option value="japon">Japon</option>
+                <option value="chine">Chine</option>
+                <option value="corée">Corée</option>
+              </optgroup>
+              <optgroup label="afrique">
+                <option value="Burkina-faso">Burkina-faso</option>
+                <option value="Mali">Mali</option>
+                <option value="Côte d'ivoir">Côte d'ivoir</option>
+              </optgroup>
+              <optgroup label="amerique">
+                <option value="États Unis">États Unis</option>
+                <option value="Canada">Canada</option>
+                <option value="Brésil">Brésil</option>
+              </optgroup>
+              <optgroup label="asie">
+                <option value="Australie">Australie</option>
+                <option value="Îles Cook.">Îles Cook</option>
+                <option value="Fidji">Fidji</option>
+              </optgroup>
+            </select>
+          </label>
+          <div class="container">
+            <div class="grid">
+              <input
+              type="text"
+              id="firstname"
+              name="firstname"
+              placeholder="Votre prénom"
+              required
+          />
+          <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Votre Nom"
+              required
+          />
+          <textarea name="message" id="message" cols="30" rows="10"></textarea>
+          <input type="submit" name="Validez">
+          <input type="reset" name="annuler">
+              
+            </div>
+          </div>
+          
+
+        </form>
+      </section>
     </main>
     <div class="clear"></div>
     <!-- fin main -->
