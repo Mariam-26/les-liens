@@ -320,16 +320,14 @@ strong {
   background-image: url(/public/img/table.jpg);
   background-position: top;
   height: 85vh;
-  margin-bottom: 30px;
 }
 .img p {
+  margin: auto;
   background-color: var(--color19);
   width: 75%;
-  margin: 200px;
   border-radius: 10px;
   font-size: 1.3rem;
   padding: 20px;
-  margin: 0 auto;
   line-height: 1.5;
   letter-spacing: 1px;
   font-family: "Playfair Display", serif;
